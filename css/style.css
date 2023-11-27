@@ -1,0 +1,243 @@
+body {
+  font-family: "Helvetica", "Helvetica Neue", "Yu Gothic", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
+  font-size: 14px;
+  color: #000000;
+  line-height: 1.7142857143;
+  letter-spacing: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+.header__inner {
+  width: 90%;
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.header__top {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 70px 0 100px;
+}
+.header__menu {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu__item {
+  margin-left: 30px;
+  color: #000000;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+}
+
+.unit {
+  margin-bottom: 60px;
+}
+.unit__category {
+  color: #898989;
+  font-size: 12px;
+  line-height: 1.6666666667;
+  letter-spacing: 0.05em;
+}
+.unit__title {
+  font-size: 38px;
+  color: #000000;
+  font-weight: lighter;
+  margin-top: 20px;
+  margin-bottom: 60px;
+  position: relative;
+}
+.unit__title::after {
+  content: "";
+  width: 110px;
+  border: 0.5px solid #000;
+  display: inline-block;
+  position: absolute;
+  top: 80px;
+  left: 0px;
+}
+.unit__text p:nth-child(1) {
+  margin-bottom: 40px;
+  font-weight: lighter;
+  letter-spacing: 0.05em;
+}
+.unit__text p:nth-child(2) {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-style: italic;
+  letter-spacing: 0.05em;
+}
+.unit__flex {
+  display: flex;
+  justify-content: space-between;
+}
+.unit__left {
+  width: 18.4%;
+}
+.unit__right {
+  width: 59.8%;
+}
+
+.works {
+  padding: 100px 0;
+}
+.works__inner {
+  width: 90%;
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.works__list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.works__item {
+  width: 31.6%;
+}
+
+.card__title {
+  margin: 30px 0 15px;
+  font-size: 20px;
+  font-weight: lighter;
+  line-height: 1.3;
+  letter-spacing: 0.05em;
+}
+.card__cate {
+  font-size: 12px;
+  color: #898989;
+  line-height: 1.6666666667;
+  letter-spacing: 0.05;
+}
+
+.project {
+  background-color: #fdf8eb;
+  padding: 100px 0;
+}
+.project__inner {
+  width: 90%;
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.project__list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.project__item {
+  width: 47.8%;
+}
+
+.banner__title {
+  font-size: 12px;
+  font-weight: bold;
+  background-color: #e40065;
+  color: #fff;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-align: center;
+  border-radius: 20px;
+  padding: 5px 10px;
+  margin: 30px 0;
+}
+.banner__text {
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 1.7;
+  letter-spacing: 0.05em;
+}
+.banner__all {
+  width: 37.6%;
+  position: absolute;
+  top: 150px;
+  left: 80px;
+  font-weight: lighter;
+}
+.banner__content {
+  margin-top: 40px;
+}
+.banner__content p {
+  margin-bottom: 15px;
+}
+
+.footer {
+  padding: 78px 0 200px;
+}
+.footer__inner {
+  width: 90%;
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.footer__small {
+  display: block;
+  color: #898989;
+  text-align: right;
+}
+
+.company__inner {
+  width: 90%;
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.company__item {
+  color: #fff;
+  position: relative;
+  margin-bottom: 60px;
+}
+
+.overview {
+  background-color: #fdf8eb;
+  padding: 100px 0;
+  margin-top: 100px;
+}
+.overview__inner {
+  width: 90%;
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.overview__list {
+  display: flex;
+  justify-content: space-between;
+}
+.overview__item {
+  width: 31.6%;
+}
+
+.tile {
+  font-weight: medium;
+}
+.tile__title {
+  font-size: 20px;
+  line-height: 1.3;
+  letter-spacing: 0.05;
+  font-weight: lighter;
+  margin-top: 30px;
+}
+.tile__cate {
+  color: #898989;
+  font-weight: lighter;
+  margin: 15px 0 40px;
+  font-size: 12px;
+}
+/*# sourceMappingURL=style.css.map */

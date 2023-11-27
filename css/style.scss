@@ -1,0 +1,298 @@
+$color-text: #000000;
+$color-category: #898989;
+$color-bg: #fdf8eb;
+$color-pink: #e40065;
+$color-white: #fff;
+
+@mixin inner($w: 90%, $mw: 1170px) {
+  width: $w;
+  max-width: $mw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@mixin flex($a: center, $j: space-between) {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: $a;
+  justify-content: $j;
+}
+
+@mixin py($y: 0) {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+body {
+  font-family: 'Helvetica', 'Helvetica Neue', 'Yu Gothic', 'Hiragino Sans',
+    'Hiragino Kaku Gothic ProN', 'Meiryo', sans-serif;
+  font-size: 14px;
+  color: $color-text;
+  line-height: (24/14);
+  letter-spacing: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+//header-------------------------------------------
+
+.header {
+  &__inner {
+    @include inner();
+  }
+
+  &__top {
+    @include flex();
+    padding: 70px 0 100px;
+  }
+
+  &__menu {
+    @include flex();
+  }
+}
+
+//menu
+
+.menu {
+  &__item {
+    margin-left: 30px;
+    color: $color-text;
+    font-weight: bold;
+    letter-spacing: (50/1000) + em;
+  }
+}
+
+//main--------------------------------------------
+
+//unit
+
+.unit {
+  margin-bottom: 60px;
+
+  &__category {
+    color: $color-category;
+    font-size: 12px;
+    line-height: (20/12);
+    letter-spacing: (50/1000) + em;
+  }
+
+  &__title {
+    font-size: 38px;
+    color: $color-text;
+    font-weight: lighter;
+    margin-top: 20px;
+    margin-bottom: 60px;
+    position: relative;
+  }
+
+  //できてない↓
+
+  &__title::after {
+    content: '';
+    width: 110px;
+    border: 0.5px solid #000;
+    display: inline-block;
+    position: absolute;
+    top: 80px;
+    left: 0px;
+  }
+
+  &__text p:nth-child(1) {
+    margin-bottom: 40px;
+    font-weight: lighter;
+    letter-spacing: (50/1000) + em;
+  }
+
+  &__text p:nth-child(2) {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    letter-spacing: (50/1000) + em;
+  }
+
+  &__flex {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__left {
+    width: 18.4%;
+  }
+
+  &__right {
+    width: 59.8%;
+  }
+}
+
+//works
+
+.works {
+  padding: 100px 0;
+
+  &__inner {
+    @include inner();
+  }
+
+  &__list {
+    @include flex();
+  }
+
+  &__item {
+    width: 31.6%;
+  }
+}
+
+//card
+
+.card {
+  &__title {
+    margin: 30px 0 15px;
+    font-size: 20px;
+    font-weight: lighter;
+    line-height: (26/20);
+    letter-spacing: (50/1000) + em;
+  }
+
+  &__cate {
+    font-size: 12px;
+    color: $color-category;
+    line-height: (20/12);
+    letter-spacing: (50/1000);
+  }
+}
+
+//project
+
+.project {
+  background-color: $color-bg;
+  padding: 100px 0;
+
+  &__inner {
+    @include inner();
+  }
+
+  &__list {
+    @include flex();
+  }
+
+  &__item {
+    width: 47.8%;
+  }
+}
+
+//banner{
+.banner {
+  &__title {
+    font-size: 12px;
+    font-weight: bold;
+    background-color: $color-pink;
+    color: $color-white;
+    width: fit-content;
+    text-align: center;
+    border-radius: 20px;
+    padding: 5px 10px;
+    margin: 30px 0;
+  }
+
+  &__text {
+    font-weight: normal;
+    font-size: 20px;
+    line-height: (34/20);
+    letter-spacing: (50/1000) + em;
+  }
+
+  &__all {
+    width: 37.6%;
+    position: absolute;
+    top: 150px;
+    left: 80px;
+    font-weight: lighter;
+  }
+
+  &__content {
+    margin-top: 40px;
+
+    p {
+      margin-bottom: 15px;
+    }
+  }
+}
+
+//footer-------------------------------------
+
+.footer {
+  padding: 78px 0 200px;
+
+  &__inner {
+    @include inner();
+  }
+
+  &__small {
+    display: block;
+    color: $color-category;
+    text-align: right;
+  }
+}
+
+//company---------------------------------------------------------
+
+.company {
+  &__inner {
+    @include inner();
+  }
+
+  &__item {
+    color: $color-white;
+    position: relative;
+    margin-bottom: 60px;
+  }
+}
+
+//overview{
+.overview {
+  background-color: $color-bg;
+  padding: 100px 0;
+  margin-top: 100px;
+
+  &__inner {
+    @include inner();
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    width: 31.6%;
+  }
+}
+
+//tile
+
+.tile {
+  font-weight: medium;
+  &__title {
+    font-size: 20px;
+    line-height: (26/20);
+    letter-spacing: (50/1000);
+    font-weight: lighter;
+    margin-top: 30px;
+  }
+
+  &__cate {
+    color: $color-category;
+    font-weight: lighter;
+    margin: 15px 0 40px;
+    font-size: 12px;
+  }
+}
